@@ -1,0 +1,119 @@
+body {
+    margin: 0px;
+    padding: 0px;  
+    font-family: 'Hanken Grotesk', sans-serif; 
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card-container{
+    display:flex;
+    width: 500px;
+    height: 380px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.card-score{
+    width: 50%;
+    background: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    border-radius: 15px;
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+}
+
+.card-summary{
+    width: 50%;
+    text-align: center;
+    border-radius: 0px 15px 15px 0px;
+}
+
+li{
+   list-style: none;
+   margin-top: 10px;
+   padding: 10px;
+   border-radius: 5px;
+   width: 150px  ;
+}
+
+p {
+    font-size: 18px;
+}
+
+button {
+    background-color: hsl(224, 30%, 27%) ;
+    color: hsl(0, 0%, 100%) ;
+    padding: 10px ;
+    width: 200px;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+.score{
+    background-color: hsl(241, 81%, 54%);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+}
+
+.text-score{
+    font-size: 12px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.score h2 {
+    color: white;
+    font-size: 70px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.aux {
+    padding: 0%;
+    margin: 0%;
+}
+
+.reaction{
+    background-color:hsla(0, 100%, 67%, 0.20);
+    color: hsla(0, 100%, 67%);
+}
+
+.reaction p {
+    padding: 0%;
+    margin: 0%;
+    display: inline;
+    font-size: 15px;
+    color: rgb(145, 145, 145);
+}
+
+#bold {
+color: black;
+}
+
+.memory{
+    background-color: hsl(39, 100%, 56%, 0.2);
+    color:  hsl(39, 100%, 56%);
+}
+
+.verbal{
+    background-color: hsl(166, 100%, 37%, 0.2);
+    color: hsl(166, 100%, 37%) ;
+}
+
+.visual {
+    background-color:  hsl(234, 85%, 45%, 0.2);
+    color: hsl(234, 85%, 45%) ;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
