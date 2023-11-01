@@ -2,30 +2,57 @@
 html {
     box-sizing: border-box;
     font-size: 16px;
-  }
-  
-  *, *:before, *:after {
+}
+
+*,
+*:before,
+*:after {
     box-sizing: inherit;
-  }
-  
-  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
     margin: 0;
     padding: 0;
     font-weight: normal;
-  }
-  
-  ol, ul {
+}
+
+ol,
+ul {
     list-style: none;
-  }
-  
-  img {
+}
+
+img {
     max-width: 100%;
     height: auto;
-  }
+}
+
+* {
+    font-family: 'Hanken Grotesk', sans-serif;
+}
 
 /* -------- Comun Styles --------- */
 
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
 main {
+    position: relative;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,47 +60,142 @@ main {
 
 h1 {
     text-align: center;
-    margin-bottom: 20px;
 }
 
 .card-container {
-    border: solid blue;
-    width: 720px;
+    /* width: 100%; */
     display: flex;
     flex-direction: row;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 
 }
+
+/* -----Card Score ------- */
 
 .card-score {
-    border: solid red;
-    width: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 300px;
+    height: 400px;
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 15px;
+    color: hsl(0, 0%, 100%);
+    text-align: center;
 }
 
+.card-score>p {
+    color: hsl(241, 100%, 89%);
+}
+
+.score {
+    background-color: hsl(241, 81%, 54%);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+}
+
+.text-score {
+    font-size: 12px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.score h2 {
+    color: white;
+    font-size: 60px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.score p {
+    padding: 0%;
+    margin: 0%;
+}
+
+
+/* ------ Card summary ------- */
 .card-summary {
-    border: solid green;
-    width: 360px;
+
+    width: 300px;
+    text-align: center;
+    border-radius: 0px 15px 15px 0px;
+}
+
+button {
+    background-color: hsl(224, 30%, 27%);
+    color: hsl(0, 0%, 100%);
+    padding: 10px;
+    width: 200px;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+.reaction {
+    background-color: hsla(0, 100%, 67%, 0.20);
+    color: hsla(0, 100%, 67%);
+}
+
+.memory {
+    background-color: hsl(39, 100%, 56%, 0.2);
+    color: hsl(39, 100%, 56%);
+}
+
+.verbal {
+    background-color: hsl(166, 100%, 37%, 0.2);
+    color: hsl(166, 100%, 37%);
+}
+
+.visual {
+    background-color: hsl(234, 85%, 45%, 0.2);
+    color: hsl(234, 85%, 45%);
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    width: 250px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+p {
+    font-size: 18px;
 }
 
 
 
+/* -----Mobil Design ----- */
 
 @media (max-width: 375px) {
-
-
-    .card-score {
-      background-color: aqua;
-    }
-
-    .card-summary {
-     background-color: blueviolet;
-    }
 
     .card-container {
         display: flex;
         flex-direction: column;
         align-items: center;
+        height: 100%;
     }
 
-  
-    
-  }
+    .card-score {
+        height: 300px;
+    }
+
+
+
+}
