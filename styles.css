@@ -63,14 +63,15 @@ h1 {
 }
 
 .card-container {
-    /* width: 100%; */
     display: flex;
     flex-direction: row;
     border-radius: 15px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-
 }
 
+p {
+    font-size: 18px;
+}
 /* -----Card Score ------- */
 
 .card-score {
@@ -122,19 +123,40 @@ h1 {
 
 /* ------ Card summary ------- */
 .card-summary {
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     width: 300px;
     text-align: center;
     border-radius: 0px 15px 15px 0px;
+}
+
+.card-summary h2 {
+    color:  hsl(240, 1%, 20%);
+    font-size: 20px;
+    text-align: start;
+    width: 250px;
+    font-weight: bold;
+    margin-top: 40px;
 }
 
 button {
     background-color: hsl(224, 30%, 27%);
     color: hsl(0, 0%, 100%);
     padding: 10px;
-    width: 200px;
+    width: 250px;
     border-radius: 30px;
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+button:hover,
+button:active,
+button:focus
+{
+    background-color: blue;
+    cursor: pointer;
 }
 
 .reaction {
@@ -172,12 +194,21 @@ li {
     border-radius: 10px;
     width: 250px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
-p {
-    font-size: 18px;
+.li p {
+    padding: 0%;
+    margin: 0%;
+    display: inline;
+    font-size: 15px;
+    color: rgb(145, 145, 145);
 }
+
+#bold {
+    font-weight: bold;
+}
+
 
 
 
